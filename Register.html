@@ -1,0 +1,152 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body style="background-image: url(assets/login.webp); background-size: cover; background-position: center;">
+    <div class="container">
+        <center>
+            <h1>Register</h1>
+        </center>
+
+        <form id="Form">
+            <div class="input-group">
+                <input type="text" placeholder="First Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="Last Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="date" id="dob" placeholder="Enter your date of birth" required>
+            </div>
+
+            <div class="gender">
+                <label for="Gender">Gender</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>Male
+                <input type="radio" id="female" name="gender" value="female" required>Female
+                <input type="radio" id="other" name="gender" value="other" required>Other
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div  class="input-group">
+                <input type="password" id="password" placeholder="New Password" minlength="8" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" minlength="8" required>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>         
+        
+        <center><p>Already have an account <a href="index.html">Login</a></p></center>
+
+    </div>
+
+    <script>
+        document.getElementById('Form').addEventListener('submit', function(event){
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+               event.preventDefault(); 
+            }
+        });
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body style="background-image: url(assets/login.webp); background-size: cover; background-position: center;">
+    <div class="container">
+        <center>
+            <h1>Register</h1>
+        </center>
+
+        <form id="Form">
+            <div class="input-group">
+                <input type="text" placeholder="First Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" placeholder="Last Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="date" id="dob" placeholder="Enter your date of birth" required>
+            </div>
+
+            <div class="gender">
+                <label for="Gender">Gender</label><br>
+                <input type="radio" id="male" name="gender" value="male" required>Male
+                <input type="radio" id="female" name="gender" value="female" required>Female
+                <input type="radio" id="other" name="gender" value="other" required>Other
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div  class="input-group">
+                <input type="password" id="password" placeholder="New Password" minlength="8" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" minlength="8" required>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="submit">Submit</button>
+            </div>
+        </form>         
+        
+        <center><p>Already have an account <a href="index.html">Login</a></p></center>
+
+    </div>
+
+    <script>
+        document.getElementById('Form').addEventListener('submit', function(event){
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+               event.preventDefault(); 
+            }
+        });
+    </script>
+</body>
+>>>>>>> 83c6a356aeaa8165e5cd20b9389281ede350f778
+</html>

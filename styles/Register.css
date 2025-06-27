@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px
+}
+
+.container {
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+}
+
+label
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+button.submit{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(58, 184, 58);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(28, 146, 28);
+}
+
+@media (max-width: 600px) 
+{
+    .container 
+    {
+        padding: 20px;
+        width: 100%;
+    }
+
+    input, button.submit 
+    {
+        width: 100%;
+    }
+}
+
+.gender 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 15px;
+}
+
+p
+{
+    margin-top: 15px;
+    color: white;
+}
